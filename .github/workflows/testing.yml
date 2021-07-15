@@ -29,14 +29,14 @@ jobs:
         run: |
           flake8
         with:
-          python-version: "${{ matrix.python_versions }}
+          python-version: "${{ matrix.python_versions }}"
       - name: "run unit tests"
         run: |
           stestr run "^vaultlocker.tests.unit.*"
         with:
-          python-version: "${{ matrix.python_versions }}
+          python-version: "${{ matrix.python_versions }}"
       - name: "run functional tests"
         run: |
           stestr run "^vaultlocker.tests.functional.*"
         with:
-          python-version: "${{ matrix.python_versions }}
+          python-version: "${{ matrix.python_versions }}"
