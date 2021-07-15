@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  run_tests_vault_1_1:
+  run_tests_vault_1_2:
     strategy:
       max-parallel: 3
       matrix:
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       vault:
-        image: vault:1.1.5
+        image: vault:1.2.4
         env:
           VAULT_DEV_ROOT_TOKEN_ID: "testing"
         ports:
