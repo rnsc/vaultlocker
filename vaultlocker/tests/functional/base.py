@@ -16,7 +16,6 @@
 # under the License.
 
 import hvac
-import os
 from unittest import mock
 import uuid
 
