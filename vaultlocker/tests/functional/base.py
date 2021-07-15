@@ -39,8 +39,8 @@ class VaultlockerFuncBaseTestCase(base.BaseTestCase):
         super(VaultlockerFuncBaseTestCase, self).setUp()
         self.vault_client = None
 
-        self.vault_addr = os.environ.get('PIFPAF_VAULT_ADDR')
-        self.root_token = os.environ.get('PIFPAF_ROOT_TOKEN')
+        self.vault_addr = "http://localhost:8200"
+        self.root_token = "testing"
         self.mount_point = 'vaultlocker'
 
         self.test_uuid = str(uuid.uuid4())
