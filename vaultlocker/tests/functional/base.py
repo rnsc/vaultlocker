@@ -78,7 +78,6 @@ class VaultlockerFuncBaseTestCase(base.BaseTestCase):
             token_max_ttl='60s',
             token_policies=[self.vault_policy],
             bind_secret_id='true',
-            token_bound_cidrs=['127.0.0.1/32'],
             mount_point=self.mount_point)
         self.role_id = self.vault_client.auth.approle.read_role_id(
             role_name=self.vault_approle,
